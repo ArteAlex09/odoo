@@ -258,7 +258,7 @@ class EscposDriver(Thread):
             eprint.text(receipt['header']+'\n')
         if check(receipt['cashier']):
             eprint.text('-'*32+'\n')
-            eprint.text('Served by '+receipt['cashier']+'\n')
+            eprint.text('Attended by '+receipt['cashier']+'\n')
 
         # Orderlines
         eprint.text('\n\n')
