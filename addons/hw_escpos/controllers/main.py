@@ -310,7 +310,7 @@ class EscposDriver(Thread):
             #eprint.text(printline(_('Taxes'),money(receipt['total_tax']),width=40, ratio=0.6))
 
         # Footer
-        if check(receipt['footer']):
+        if check(receipt['footer'],width=40, ratio=0.6):
             eprint.text('\n'+receipt['footer']+'\n\n')
         eprint.text(receipt['name']+'\n')
         eprint.text(      str(receipt['date']['date']).zfill(2)
